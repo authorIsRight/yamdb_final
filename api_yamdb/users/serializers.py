@@ -39,8 +39,8 @@ class TokenObtainPairSerializer(serializers.Serializer):
                 'Некорректный код подтверждения'
             )
         refresh = RefreshToken.for_user(user)
-        data = {'access_token': str(refresh.access_token)}
-        return data
+        # data = {'access_token': str(refresh.access_token)}
+        return {'access_token': str(refresh.access_token)}
 
 
 class UserSignUpSerializer(serializers.Serializer):

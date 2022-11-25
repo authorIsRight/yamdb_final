@@ -150,3 +150,5 @@ docker-compose exec web python manage.py dumpdata > fixtures.json
     Права доступа: Автор комментария, модератор или администратор
 
 sudo docker compose exec web python manage.py collectstatic --no-input
+
+ffffffffffffffffffffffff

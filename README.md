@@ -148,3 +148,5 @@ docker-compose exec web python manage.py dumpdata > fixtures.json
     _Пример DELETE-запроса:_  
     Эндпойнт:  [http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/](http://127.0.0.1:8000/api/v1/titles/%7Btitle_id%7D/reviews/%7Breview_id%7D/comments/%7Bcomment_id%7D/)  
     Права доступа: Автор комментария, модератор или администратор
+
+    1

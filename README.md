@@ -2,7 +2,8 @@
 yamdb_final
 
 
-![Failed workflow](https://github.com/authorisright/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![API_YAMDB_FINAL](https://github.com/authorisright/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 
 
 
@@ -29,7 +30,7 @@ yamdb_final
 Каждый ресурс описан в документации: указаны эндпоинты (адреса, по которым можно сделать запрос), разрешённые типы запросов, права доступа и дополнительные параметры, если это необходимо.
 
 
-После запуска проекта, по адресу http://127.0.0.1:8000/redoc/ будет доступна документация для Yamdb API.
+После запуска проекта, по адресу http://178.154.222.150//redoc/ будет доступна документация для Yamdb API.
 
 ## Как запустить проект:
 

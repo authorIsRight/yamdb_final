@@ -157,3 +157,5 @@ sudo docker compose exec web python manage.py createsuperuser --email 'admin@yam
 scp my_file username@host:<путь-на-сервере>
 scp infra/docker-compose.yaml vubuntu@178.154.222.150:/home/vubuntu/
 scp infra/nginx/default.conf vubuntu@178.154.222.150:home/vubuntu/nginx/default.conf
+
+docker-compose exec web bash

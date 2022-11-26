@@ -64,6 +64,7 @@ docker-compose up -d
 
 ```
 
+
 Будут созданы и запущены в фоновом режиме необходимые для работы приложения контейнеры (db, web, nginx).
 
 Затем нужно внутри контейнера web выполнить миграции, создать суперпользователя и собрать статику:
@@ -149,13 +150,3 @@ docker-compose exec web python manage.py dumpdata > fixtures.json
     Эндпойнт:  [http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/](http://127.0.0.1:8000/api/v1/titles/%7Btitle_id%7D/reviews/%7Breview_id%7D/comments/%7Bcomment_id%7D/)  
     Права доступа: Автор комментария, модератор или администратор
 
-sudo docker compose up -d
-sudo docker compose exec web python manage.py migrate
-sudo docker compose exec web python manage.py collectstatic
-sudo docker compose exec web python manage.py createsuperuser --email 'admin@yamdb.com'
-
-scp my_file username@host:<путь-на-сервере>
-scp infra/docker-compose.yaml vubuntu@178.154.222.150:/home/vubuntu/
-scp infra/nginx/default.conf vubuntu@178.154.222.150:home/vubuntu/nginx/default.conf
-
-docker-compose exec web bash
